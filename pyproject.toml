@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "subscription-tracker"
+version = "1.0.0"
+description = "Telegram-бот для отслеживания подписок"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-telegram-bot>=21.0",
+    "APScheduler>=3.10",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+subscription-tracker = "subscription_tracker.__main__:main"
